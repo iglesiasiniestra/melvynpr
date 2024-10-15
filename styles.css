@@ -1,0 +1,153 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0D0D0D;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #ff6b6b; /* Updated section titles to #ff6b6b */
+}
+
+/* Limit the width of text content for better readability */
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+p {
+  line-height: 1.6em;
+  font-size: 1.2em;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #1A1A1A;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  width: 100%; /* Ensures it spans the full width of the page */
+  z-index: 1000; /* Ensures the navbar stays above other elements */
+  box-sizing: border-box; /* Ensures padding is accounted for */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures that the links stay inline */
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  font-weight: bold;
+  color: #fff; /* Makes the menu bar text white */
+}
+
+.language-button {
+  padding: 8px 15px; /* Reduced padding for smaller size */
+  background-color: #ff6b6b;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 0.85em; /* Reduced font size */
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 10px; /* Ensure there's spacing from the edge */
+}
+
+.language-button:hover {
+  background-color: #e65f5f;
+}
+
+/* Add padding to the top of the body to prevent content from hiding under the fixed navbar */
+body {
+  padding-top: 70px; /* Adjust this value based on your navbar height */
+}
+
+/* Hero Section */
+.hero {
+  background: url('hero-image.jpg') no-repeat center center/cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 4em; /* Slightly smaller font size for "Sinister Church" */
+  color: #fff; /* Text color remains white */
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.cta {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.cta:hover {
+  background-color: #e65f5f;
+}
+
+/* Section Styles */
+.section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1A1A1A;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+/* Event Names in Color */
+.event-name {
+  color: #ff6b6b; /* Event names in the specified color */
+}
+#upcoming-events ul {
+  list-style-type: none;
+}
+
+#upcoming-events li {
+  font-size: 1.2em;
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #f0f0f0;
+}
+
+#upcoming-events li strong {
+  color: #ff6b6b;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #1A1A1A;
+  padding: 20px;
+  text-align: center;
+}
